@@ -2,7 +2,8 @@ package com.wxy.h2.entity;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * @Author wangxiaoyuan
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @Entity
 public class User {
     @Id
-    private String id;
+    private Long id;
     private Integer age;
     private String name;
     private String address;
